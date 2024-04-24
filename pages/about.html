@@ -4,13 +4,40 @@
 	<head>
 		<title>About - Protect 4 Paws</title>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../asset/css/protect4paws_style.css">
+    	<meta charset="utf-8">
+   		 <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="stylesheet" href="../asset/css/protect4paws_style.css">
+		<style>
+			.btn-primary{
+				background: chocolate;
+				border: none;
+				border-radius: 2em;
+
+			}
+			.btn-primary:hover{
+				background: #D6E28E;
+				color: rgb(70, 45, 13);
+				border: none;
+				border-radius: 2em;
+			}
+			
+			.wrapper{
+				padding-top: 4vw;
+				padding-bottom: 4vw;
+    			margin-bottom: 10vw;
+			}
+			.header-img{
+				width: 150%;
+				margin-left: -12em;
+			}
+		</style>
 	</head>
 	<body class="">
 		<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary ">
 			<div class="container ">
-				<a class="navbar-brand" href="index.html">
-					<img src="asset/img/Logo_Protect4Paws.svg" alt="Logo" width="70" height=auto>
+				<a class="navbar-brand" href="../index.html">
+					<img src="../asset/img/Logo_Protect4Paws.svg" alt="Logo" width="70" height=auto>
 				  </a>
 			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -22,9 +49,9 @@
 						Adopt
 					  </a>
 					  <ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="pages/adopt/adoptable_animals.html">Adoptable animals</a></li>
-						<li><a class="dropdown-item" href="pages/adopt/adopt_forms.html">Adoption form</a></li>
-						<li><a class="dropdown-item" href="pages/adopt/adopt_process.html">Our Adoption/Surrender Process</a></li>
+						<li><a class="dropdown-item" href="adopt/adoptable_animals.html">Adoptable animals</a></li>
+						<li><a class="dropdown-item" href="adopt/adopt_forms.html">Adoption form</a></li>
+						<li><a class="dropdown-item" href="adopt/adopt_process.html">Our Adoption/Surrender Process</a></li>
 					  </ul>
 				  </li>
 				  <li class="nav-item dropdown">
@@ -32,25 +59,25 @@
 						Support
 					  </a>
 					  <ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="pages/support/donate.html">Donate</a></li>
-						<li><a class="dropdown-item" href="pages/support/waystohelp.html">Ways you can help</a></li>
+						<li><a class="dropdown-item" href="support/donate.html">Donate</a></li>
+						<li><a class="dropdown-item" href="support/waystohelp.html">Ways you can help</a></li>
 					  </ul>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="pages/about.html">About</a>
+					<a class="nav-link" href="about.html">About</a>
 				  </li>
 				  <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					  Contact us
 					</a>
 					<ul class="dropdown-menu">
-					  <li><a class="dropdown-item" href="pages/contact/find_us.html">Find us</a></li>
-					  <li><a class="dropdown-item" href="pages/contact/appointment.html">Book an appointment</a></li>
-					  <li><a class="dropdown-item" href="pages/contact/opportunities.html">Career Opportunities</a></li>
+					  <li><a class="dropdown-item" href="contact/find_us.html">Find us</a></li>
+					  <li><a class="dropdown-item" href="contact/appointment.html">Book an appointment</a></li>
+					  <li><a class="dropdown-item" href="contact/opportunities.html">Career Opportunities</a></li>
 					</ul>
 				  </li>
 				  <li class="nav-item">
-					<a class="btn btn-primary" href="pages/support/donate.html" role="button">Donate</a>
+					<a class="btn btn-primary" href="support/donate.html" role="button">Donate</a>
 				  </li>
 				</ul>
 			  </div>
@@ -65,7 +92,7 @@
             		    <div class="wsite-section-content">
                         <div class="container">
             			    <div class="wsite-section-elements">
-            				    <h2 class="wsite-content-title" style="text-align:center;">
+            				    <h1 style="text-align:center;">
                                     <font size="7" color="#2a2a2a">
                                         <span style="caret-color: rgb(255, 0, 0);">
                                             <strong>About Us</strong>
@@ -163,75 +190,8 @@
                     </div>
                 </div>
             </div>
-        </div> <!--wrapper-->
-        <!--
-        iv class="nav mobile-nav">
-        <a class="hamburger" aria-label="Menu" href="#"><span></span></a>
-        <ul class="wsite-menu-default">
-        		<li id="pg672569663764834167" class="wsite-menu-item-wrap">
-        			<a
-        						href="/"
-        				class="wsite-menu-item"
-        				>
-        				Home
-        			</a>
-                
-        		</li>
-        		<li id="active" class="wsite-menu-item-wrap">
-        			<a
-        						href="/about.html"
-        				class="wsite-menu-item"
-        				>
-        				About
-        			</a>
-                
-        		</li>
-        		<li id="pg515527093271570773" class="wsite-menu-item-wrap">
-        			<a
-        						href="/contact.html"
-        				class="wsite-menu-item"
-        				>
-        				Contact
-        			</a>
-                
-        		</li>
-        		<li id="pg594870786708320360" class="wsite-menu-item-wrap">
-        			<a
-        						href="/appointmentanimals-up-for-adoption.html"
-        				class="wsite-menu-item"
-        				>
-        				Appointment/Animals up for Adoption
-        			</a>
-                
-        		</li>
-        		<li id="pg852093059187986132" class="wsite-menu-item-wrap">
-        			<a
-        						href="/our-adoption-process.html"
-        				class="wsite-menu-item"
-        				>
-        				Our Adoption Process
-        			</a>
-                
-        		</li>
-        		<li id="pg205965092138624505" class="wsite-menu-item-wrap">
-        			<a
-        						href="/our-surrender-process.html"
-        				class="wsite-menu-item"
-        				>
-        				Our Surrender Process
-        			</a>
-                
-        		</li>
-        		<li id="pg188406991762750761" class="wsite-menu-item-wrap">
-        			<a
-        						href="/employment-opportunities.html"
-        				class="wsite-menu-item"
-        				>
-        				Employment Opportunities
-        			</a>
-                
-        		</li>
-        </ul>
-        </div>-->
+        </div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
