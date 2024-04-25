@@ -10,3 +10,19 @@
 h1{
     color: chocolate;
 }
+.img_circle{
+    margin: auto;
+}
+.wrapper{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    margin-bottom: 10vw;
+}
+.header-img{
+    width: 150%;
+    margin-left: -12em;
+}
+.navbar-nav li{
+    justify-content: space-around;
+    margin: 1em;
+}
