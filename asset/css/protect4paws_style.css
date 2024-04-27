@@ -1,30 +1,96 @@
 
+/* All sites setting*/
 *{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(80, 51, 12);
+    color:rgb(70, 45, 13);
+}
+strong{
+    color: rgb(70, 45, 13);
+}
+em{
+    font-weight: 600;
+    font-style: italic;
 }
 
-h1{
-    color: chocolate;
-}
-.navbar-nav{
-     color: rgb(80, 51, 12) !important;
-}
-
+/*Buttons*/
 .btn-primary{
     background: chocolate;
     border: none;
     border-radius: 2em;
-
+}
+.btn-primary:active{
+    background: chocolate !important; 
+    border: none !important;
+    border-radius: 2em !important;
 }
 .btn-primary:hover{
+    background: #D6E28E;
+    color: chocolate;
+    border: 1px solid chocolate;
+    border-radius: 2em;
+}
+.btn-outline-primary{
+    border-color: rgb(70, 45, 13);
+    color: rgb(70, 45, 13);
+    border-radius: 2em;
+}
+.btn-outline-primary:active{
+    background-color: #D6E28E !important;
+    border-color: rgb(70, 45, 13) !important;
+    color: rgb(70, 45, 13) !important;
+    border-radius: 2em !important;
+}
+.btn-outline-primary:hover{
     background: #D6E28E;
     color: rgb(70, 45, 13);
     border: none;
     border-radius: 2em;
 }
+
+.btn-outline-secondary{
+    border-color: chocolate;
+    color: chocolate;
+    border-radius: 2em;
+}
+.btn-outline-secondary:active{
+    background-color: #D6E28E !important;
+    border-color: rgb(70, 45, 13) !important;
+    color: rgb(70, 45, 13) !important;
+    border-radius: 2em !important;
+}
+.btn-outline-secondary:hover{
+    background: none;
+    color: rgb(70, 45, 13);
+    border-color: rgb(70, 45, 13);
+    border-radius: 2em;
+}
+body{
+    color: rgb(70, 45, 13);
+}
+
+h1{
+    color: chocolate;
+}
+/*Navigation bar*/
+.navbar-nav{
+     color: rgb(80, 51, 12) !important;
+}
+.navbar-nav li{
+    justify-content: space-around;
+    margin: 1em;
+}
+.dropdown-item:active{
+    background-color: #D6E28E !important;
+    color: rgb(70, 45, 13);
+}
+.navbar{
+    color: rgb(70, 45, 13);
+}
+
+
+/*Main*/
 .img_circle {
        margin: auto;
     width: 100%;
@@ -38,8 +104,4 @@ h1{
 .header-img {
     width: 150%;
     margin-left: -12em;
-}
-.navbar-nav li{
-    justify-content: space-around;
-    margin: 1em;
 }
