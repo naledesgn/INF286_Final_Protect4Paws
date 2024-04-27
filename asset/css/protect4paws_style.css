@@ -118,3 +118,12 @@ h1{
     height: 60vw;
   }
 .carousel-inner > .carousel-item > img{ margin:auto; }
+.card-title{
+    color: chocolate;
+}
+
+/*About pages*/
+.table > .table-primary{
+    background: #D6E28E !important;
+    color: rgb(70, 45, 13);
+}

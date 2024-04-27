@@ -60,70 +60,211 @@
 			  </div>
 			</div>
 		  </nav>
-		  <div class="container">
-
-		  
-
-        <h1>Adoption form</h1>
-
-        <form action="#" method="get">
-            <div>
-                <label>Email:</label>
-                <input type="email"/>
-            </div>
-            <div>
-                <label> First name: </label>
-                <input name="first_name" type="text"/> 
-            </div>
-
-
-            <div>
-                <label> Initial: </label>
-                <input name="initial" type="text" maxlength="1"/> 
-            </div>
-            
-
-            <div>
-                <label>Last name</label>
-                <input name="last_name" type="text"/> 
-            </div>
-            
-
-            <div>
-                <label for="">Gender: </label>
-                <select name="gender" id="">
-                    <option value="">Select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            
-
-            <div>
-                <label for="">Date of Birth: </label>
-                <input type="date" name="birth_date" id="">
-            </div>
-
-            
-
-            <div>
-                <label>Phone number: </label>
-                <input type="number" name="phone_number" id="">
-            </div>
-            
-
-            <div>
+		<div class="container p-5">
+        <h1 class="mb-5">Adoption form</h1>
+		<form class="row g-3" action="#" method="post">
+			<div class="col-md-6">
+			<div class="row g-3">
+				<div class="col">
+				<label for="first_name" class="form-label">First name</label>
+				  <input type="text" class="form-control" placeholder="" aria-label="First name" required >
+				</div>
+				<div class="col">
+					<label for="first_name" class="form-label">Last name</label>
+				  <input type="text" class="form-control" placeholder="" aria-label="Last name" required >
+				</div>
+			  </div>
+			</div>
+			<div class="col-12">
+			  <label for="inputEmail4" class="form-label">Email</label>
+			  <input type="email" class="form-control" id="inputEmail4" required >
+			</div>
+			<div class="col-12">
+			  <label for="inputAddress" class="form-label">Address</label>
+			  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St, Highland Heights, KY 41099">
+			</div>
+			<div class="col-12">
+				<label for="inputPhoneNum" class="form-label">Phone Number</label>
+				<input type="text" class="form-control" id="inputPhoneNum" placeholder="859888000" required>
+			</div>
+			<div class="col-12">
+			<label for="">Preferred Method of Contact
+			</label>
+			<div class="form-check" required>
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+				<label class="form-check-label" for="flexRadioDefault1">
+				  Email
+				</label>
+			  </div>
+			  <div class="form-check">
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+				<label class="form-check-label" for="flexRadioDefault1">
+				  Phone
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+				<label class="form-check-label" for="flexRadioDefault1">
+				  Facebook/Instagram
+				</label>
+			</div>
+			</div>
+			<div class="col-12">
                 <label>Facebook Profile URL: </label>
-                <input type="url" name="fb_url" id="">
+                <input type="url" class="form-control" name="fb_url" id="">
             </div>
-           
-            <br>
-            <br><br>
-            <input type="submit" name="" id=""> 
-            
-        </form>
-		
+			<div class="col-12">
+				<label for="inputProfession" class="form-label">Profession</label>
+				<input type="text" class="form-control" id="inputProfession">
+			  </div>
+			  <div class="col-12">
+				<label for="children" class="form-label">Do you have any children in the home? If yes, what are their ages?
+					</label>
+				<input type="text" class="form-control" id="children" required>
+			  </div>
+			  <div class="col-12">
+				<label for="pet" class="form-label">Current pets in the home? If so, what kind? What are their ages?
+				</label>
+				<input type="text" class="form-control" id="pet" required>
+			  </div>
+				<div class="col-12">
+				<label for="">Are your current pets spayed/neutered?
+				</label>
+				<div class="form-check" required>
+					<input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2">
+					<label class="form-check-label" for="flexRadioDefault2">
+					  Yes
+					</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2">
+					<label class="form-check-label" for="flexRadioDefault2">
+					  No
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2">
+					<label class="form-check-label" for="flexRadioDefault2">
+					  N/A
+					</label>
+				</div>
+				</div>
+
+				<div class="col-12">
+					<label for="">Are your current pets up-to-date on vaccines?
+					</label>
+					<div class="form-check" required>
+						<input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3">
+						<label class="form-check-label" for="flexRadioDefault3">
+						  Yes
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3">
+						<label class="form-check-label" for="flexRadioDefault3">
+						  No
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3">
+						<label class="form-check-label" for="flexRadioDefault3">
+						  N/A
+						</label>
+					</div>
+					</div>
+					<div class="col-12">
+						<label for="rent" class="form-label">Vet contact information</label>
+					  <input type="text" class="form-control" required >
+					</div>
+					<div class="col-12">
+						<label for="">Type of Animal Interested In:
+						</label>
+						<div class="form-check" required>
+							<input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault3">
+							<label class="form-check-label" for="flexRadioDefault4">
+							  Dog
+							</label>
+						  </div>
+						  <div class="form-check">
+							<input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault3">
+							<label class="form-check-label" for="flexRadioDefault4">
+							  Cat
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault3">
+							<label class="form-check-label" for="flexRadioDefault4">
+							  Others
+							</label>
+						</div>
+					</div>
+					<div class="col-12">
+						<label for="age" class="form-label">Age Preference</label>
+					  <input type="text" class="form-control" name="age" id="age"  >
+					</div>
+					<div class="col-12">
+						<label for="animalname" class="form-label">Name of Animal Interested In</label>
+					  <input type="text" class="form-control" name="animalname" id="animalname"  >
+					</div>
+
+					<div class="col-12">
+						<label for="">Type of Home:
+						</label>
+						<div class="form-check" required>
+							<input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault3">
+							<label class="form-check-label" for="flexRadioDefault5">
+								Single Family
+							</label>
+						  </div>
+						  <div class="form-check">
+							<input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault3">
+							<label class="form-check-label" for="flexRadioDefault5">
+								Multiple Family
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault3">
+							<label class="form-check-label" for="flexRadioDefault5">
+							 Apartment
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault3">
+							<label class="form-check-label" for="flexRadioDefault5">
+							Townhome/Condo
+							</label>
+						</div>
+					</div>
+					<div class="col-12">
+						<label for="rent" class="form-label">Rent or Own</label>
+					  <input type="text" class="form-control" name="rent" id="rent" required >
+					</div>
+					<div class="col-12">
+						<label for="rent" class="form-label">Landlord Contact Info</label>
+					  <input type="text" class="form-control" name="landlord" id="landloard" required >
+					</div>
+					<div class="col-12">
+						<label for="">Fenced in Yard?
+						</label>
+						<div class="form-check" required>
+							<input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault3">
+							<label class="form-check-label" for="flexRadioDefault6">
+							  Yes
+							</label>
+						  </div>
+						  <div class="form-check">
+							<input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault3">
+							<label class="form-check-label" for="flexRadioDefault6">
+							  No
+							</label>
+						</div>
+					</div>
+			<div class="col-12">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+			
+		  </form>
+		</div>
 	</div>
 	<!-- Footer -->
 <footer class="text-center text-lg-start" style="background-color: #d5e28e68;">
